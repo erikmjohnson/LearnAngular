@@ -1,0 +1,16 @@
+<div>Employee Form</div>
+<form [formGroup]="employeeNameFormGroup">
+<label>
+    First Name:
+    <input type="text" maxlength="10" formControlName="firstName">  
+</label>
+<div *ngIf="formfields.firstName.errors?.required">First Name is required</div>
+<div *ngIf="formfields.firstName.errors?.maxLength">First Name should be less than 10 char length</div>
+<br>
+<label>
+    Last Name:
+    <input type="text" fromControlName="lastName">
+</label>
+<br>
+<button (click)="submit()">Submit</button>
+</form>

@@ -1,0 +1,14 @@
+<div class="container-fluid" style="margin-top: 80px;"> 
+    <table class="table table-hover table-dark">
+        <thead><tr>
+            <th scope="col" *ngFor="let column of columns">{{column}}</th>
+        </tr></thead>
+        <tbody>
+            <tr *ngFor="let countrysum of country.Countries">
+                <td>{{countrysum.Country}}</td>
+                <td>{{countrysum.TotalConfirmed}}</td>
+                <td>{{countrysum.TotalRecovered}}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>

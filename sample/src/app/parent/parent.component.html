@@ -1,0 +1,4 @@
+<p>parent works!</p>
+<app-child #appchild (datafromchild1)="eventfromChild($event)" [userDetails1]="user"></app-child>
+<app-employee [datatoemployee]="appchild.demoTemplateVar"></app-employee>
+<button (click)="changeChildInput()">change child's input</button>
